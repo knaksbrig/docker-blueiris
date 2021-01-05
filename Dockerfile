@@ -24,13 +24,13 @@ ENV DISPLAY :0
 # Install wine
 RUN \
  #wget -nc https://dl.winehq.org/wine-builds/Release.key && \
- apt install wine64
- #wget -nc https://dl.winehq.org/wine-builds/Release.key && \
+  #wget -nc https://dl.winehq.org/wine-builds/Release.key && \
  #apt-key add Release.key && \
  #apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F987672F && \
  #apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' && \
  #add-apt-repository ppa:cybermax-dexter/sdl2-backport && \
- #apt-get update && \
+ apt-get update && \
+ apt -y install --allow-unauthenticated wine64
  #apt-get -y install --allow-unauthenticated --install-recommends winehq-devel
 
 RUN \
