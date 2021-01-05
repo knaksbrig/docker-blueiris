@@ -37,7 +37,7 @@ RUN \
  cd /usr/bin/ && \
  wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks && \
  chmod +x winetricks && \
- sh winetricks corefonts wininet dotnet45
+ sh winetricks corefonts wininet
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD blueiris.sh /root/blueiris.sh
