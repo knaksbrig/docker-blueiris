@@ -24,7 +24,7 @@ ENV DISPLAY :0
 # Install wine
 RUN \
  #wget -nc https://dl.winehq.org/wine-builds/Release.key && \
- wget -qO- https://dl.winehq.org/wine-builds/Release.key && \
+ wget -nc https://dl.winehq.org/wine-builds/Release.key && \
  apt-key add Release.key && \
  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F987672F && \
  apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main' && \
