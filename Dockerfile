@@ -28,6 +28,7 @@ RUN \
  apt-key add Release.key && \
  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F987672F && \
  apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' && \
+ add-apt-repository ppa:cybermax-dexter/sdl2-backport && \
  apt-get update && \
  apt-get -y install --allow-unauthenticated --install-recommends winehq-stable
 
