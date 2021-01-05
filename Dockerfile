@@ -29,7 +29,7 @@ RUN \
  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv F987672F && \
  apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' && \
  apt-get update && \
- apt-get -y install --allow-unauthenticated --install-recommends winehq-devel
+ apt-get -y install --allow-unauthenticated --install-recommends winehq-stable
 
 RUN \
  cd /usr/bin/ && \
